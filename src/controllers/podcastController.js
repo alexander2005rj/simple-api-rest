@@ -1,3 +1,7 @@
+const podcastData = require('../data/podcasts.json')
+const errorMessages = require('../data/errorMessages.json')
+const successMessages = require('../data/successMessages.json')
+
 exports.post = (req, res, next) => {
     res.status(201).send('Rota POST!');
 };
@@ -13,10 +17,16 @@ exports.delete = (req, res, next) => {
 };
 
 exports.get = (req, res, next) => {
-    res.status(200).send('Rota GET!');
+    res.status(200).json(podcastData);
 };
 
 exports.getById = (req, res, next) => {
-    let id = req.params.id;
-    res.status(200).send(`Rota GET com ID! ${id}`);
+    let id = Number.parseInt(req.params.id);
+    if (id === 0) {
+        res.status(404).json(errorMessages[`${id}`])
+    }
+    if (id > 0) {
+        id--;
+        res.status(200).json(podcastData[`${id}`]);
+    }
 };
