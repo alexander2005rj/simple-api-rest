@@ -1,8 +1,8 @@
 const podcastController = require('../controllers/podcastController');
 module.exports = (app) => {
-    app.post('/podcast', podcastController.post);
-    app.put('/podcast/:id', podcastController.put);
-    app.delete('/podcast/:id', podcastController.delete);
-    app.get('/podcasts', podcastController.get);
-    app.get('/podcast/:id', podcastController.getById);
+    app.post('/api/v1/podcast', podcastController.post);
+    app.put('/api/v1/podcast/:id', podcastController.put);
+    app.delete('/api/v1/podcast/:id', podcastController.delete);
+    app.get('/api/v1/podcasts', podcastController.get);
+    app.get('/api/v1/podcast/:id', podcastController.getById)
 }
