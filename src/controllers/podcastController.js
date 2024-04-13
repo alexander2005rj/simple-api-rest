@@ -12,8 +12,12 @@ exports.getById = (req, res) => {
     podcastModel.findPodcastById(req.params.id, res);
 };
 
+exports.patch = (req, res) => {
+    podcastModel.partialUpdatePodcast(req.body, req.params.id, res);
+};
+
 exports.put = (req, res) => {
-    podcastModel.updatePodcast(req.body, req.params.id, res);
+    podcastModel.fullUpdatePodcast(req.body, req.params.id, res);
 };
 
 exports.delete = (req, res) => {
