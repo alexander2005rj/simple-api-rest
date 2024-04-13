@@ -2,6 +2,8 @@ const podcastData = require('../data/podcasts.json');
 
 function createPodcast(jsonBody, response) {
     const newPodcast = jsonBody;
+    const idx = podcastData.findIndex(podcastData => podcastData.id === parseInt(newPodcast.id))
+    if (idx >= 0) return response.status(400).json({ error: `podcast_id ${newPodcast.id} already exists` })
     podcastData.push(newPodcast)
     response.status(201).json({ created: newPodcast, status: 'succeeded' })
 }
