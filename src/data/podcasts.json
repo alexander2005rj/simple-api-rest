@@ -1,62 +1,53 @@
 [
-    {
-        "id": 1,
-        "podcastName": "Dev Na Estrada",
-        "episodes": [
-            {
-                "name": "DNE 416 - Dev de Framework",
-                "hosts": {
-                    "participants": [
-                        "Eduardo Matos",
-                        "Emilio Aiolfi"
-                    ]
-                },
-                "releaseDate": "2019-03-11T20:19:46.809Z",
-                "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
-            }
-        ],
-        "topic": "tech",
-        "stars": 5,
-        "createAt": "2019-03-11T20:19:46.809Z"
-    },
-    {
-        "id": 2,
-        "podcastName": "Dev Na Estrada",
-        "episodes": [
-            {
-                "name": "DNE 417 - Dev de Churros",
-                "hosts": {
-                    "participants": [
-                        "Eduardo Matos",
-                        "Emilio Aiolfi"
-                    ]
-                },
-                "releaseDate": "2019-03-11T20:19:46.809Z",
-                "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
-            }
-        ],
-        "topic": "tech",
-        "stars": 5,
-        "createAt": "2019-03-11T20:19:46.809Z"
-    },
-    {
-        "id": 3,
-        "podcastName": "Dev Na Estrada",
-        "episodes": [
-            {
-                "name": "DNE 418 - Dev de UNESQUINA",
-                "hosts": {
-                    "participants": [
-                        "Eduardo Matos",
-                        "Emilio Aiolfi"
-                    ]
-                },
-                "releaseDate": "2019-03-11T20:19:46.809Z",
-                "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
-            }
-        ],
-        "topic": "tech",
-        "stars": 5,
-        "createAt": "2019-03-11T20:19:46.809Z"
-    }
+  {
+    "id": 1,
+    "podcastName": "Dev Na Estrada",
+    "episodes": [
+      {
+        "name": "DNE 416 - Dev de Framework",
+        "hosts": {
+          "participants": ["Eduardo Matos", "Emilio Aiolfi"]
+        },
+        "releaseDate": "2019-03-11T20:19:46.809Z",
+        "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
+      }
+    ],
+    "topic": "tech",
+    "stars": 5,
+    "createAt": "2019-03-11T20:19:46.809Z"
+  },
+  {
+    "id": 2,
+    "podcastName": "Dev Na Estrada",
+    "episodes": [
+      {
+        "name": "DNE 417 - Dev de Churros",
+        "hosts": {
+          "participants": ["Eduardo Matos", "Emilio Aiolfi"]
+        },
+        "releaseDate": "2019-03-11T20:19:46.809Z",
+        "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
+      }
+    ],
+    "topic": "tech",
+    "stars": 5,
+    "createAt": "2019-03-11T20:19:46.809Z"
+  },
+  {
+    "id": 3,
+    "podcastName": "Dev Na Estrada",
+    "episodes": [
+      {
+        "name": "DNE 418 - Dev de UNESQUINA",
+        "hosts": {
+          "participants": ["Eduardo Matos", "Emilio Aiolfi"]
+        },
+        "releaseDate": "2019-03-11T20:19:46.809Z",
+        "link": "https://devnaestrada.com.br/2024/03/22/dev-de-framework.html"
+      }
+    ],
+    "topic": "tech",
+    "stars": 5,
+    "createAt": "2019-03-11T20:19:46.809Z"
+  }
 ]

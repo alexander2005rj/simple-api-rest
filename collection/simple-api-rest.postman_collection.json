@@ -1,0 +1,121 @@
+{
+  "info": {
+    "_postman_id": "365b8a0c-d796-45cd-b264-aa083cdfb7f5",
+    "name": "Mentoria QE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3237126"
+  },
+  "item": [
+    {
+      "name": "/api/v1/podcasts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/podcasts",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "podcasts"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/podcast/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/podcast/2",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "podcast", "2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/podcast",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 4,\n    \"podcastName\": \"Teste de POST\",\n    \"episodes\": [\n        {\n            \"name\": \"DNE 417 - Dev de Churros\",\n            \"hosts\": {\n                \"participants\": [\n                    \"Eduardo Matos\",\n                    \"Emilio Aiolfi\"\n                ]\n            },\n            \"releaseDate\": \"2019-03-11T20:19:46.809Z\",\n            \"link\": \"https://devnaestrada.com.br/2024/03/22/dev-de-framework.html\"\n        }\n    ],\n    \"topic\": \"tech\",\n    \"stars\": 5,\n    \"createAt\": \"2019-03-11T20:19:46.809Z\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v1/podcast",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "podcast"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/podcast/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"podcastName\": \"Teste PATCH\",\n    \"topic\": \"tech\",\n    \"stars\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v1/podcast/4",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "podcast", "4"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/podcast/:id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"podcastName\": \"Teste de PUT\",\n    \"episodes\": [\n        {\n            \"name\": \"DNE 417 - PUT\",\n            \"hosts\": {\n                \"participants\": [\n                    \"Fulano\",\n                    \"Ciclano\"\n                ]\n            },\n            \"releaseDate\": \"2019-03-11T20:19:46.809Z\",\n            \"link\": \"https://devnaestrada.com.br/2024/03/22/dev-de-framework.html\"\n        }\n    ],\n    \"topic\": \"tech\",\n    \"stars\": 4,\n    \"createAt\": \"2019-03-11T20:19:46.809Z\"\n}"
+        },
+        "url": {
+          "raw": "localhost:3000/api/v2/podcast/4",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v2", "podcast", "4"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/podcast/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/podcast/1",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "podcast", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
